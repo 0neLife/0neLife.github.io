@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 992px) {
+	.owl-theme .owl-controls .owl-buttons div.owl-prev {left:7px;}
+	.owl-theme .owl-controls .owl-buttons div.owl-next{right: 7px;}
+}
+
+@media only screen and (max-width: 768px){
+	.fixed-menu .burger-btn {display: block;}
+	.fixed-menu nav {display: none;}
+	.fixed-menu nav ul li {display: block!important; text-align: center!important; line-height: 50px!important;}
+	
+	.footer-wrap{height: 100px;}
+	.art-footer{height: 55px;}
+	.footer-wrap .copy a{font-size: 10px;}
+	.footer-wrap .copy span {margin-left: 5px;}
+	.footer-wrap .copy span:before{width: 0px;}
+	.footer-wrap .soc-wrap li {margin: 0px 5px;}
+	.footer-wrap .dev {right:50%; margin-right: -40px;}
+}
+
+@media only screen and (max-width: 468px){}
+
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 768px) and (orientation: landscape) {}
