@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- <base href="http://yubutsan.com.ua/"> -->
+		<meta charset="UTF-8">
+		<title>Подсветка пунктов главного меню при скроллинге с помощью Waypoints</title>
+		<meta name="description" content="Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта...">
+		<meta name="keywords" content="waypoints, jquery, css3, js">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:url" content="http://yubutsan.com.ua/blog/waypoints">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Подсветка пунктов главного меню при скроллинге с помощью Waypoints">
+		<meta property="og:description" content="Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта...">
+		<meta property="og:image" content="img/sticky-waypoints.jpg">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nav-btn.css">
+		<link rel="next" href="blog/waypoints?page=2&amp;cultureKey=">
+	</head>
+	<body>
+		<header>
+			<div class="fixed-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+								<img src="img/logo-dev-white.png" alt="logo-dev-white.png"><span>Front-End Developer</span>
+							</a>
+							<div class="burger-btn" data-menu="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="col-sm-9 center">
+							<nav class="fixed-nav-menu">
+								<ul>
+									<li>
+										<a href="index.html">Главная</a>
+									</li>
+									<li>
+										<a href="resume.html">О себе</a>
+									</li>
+									<li>
+										<a href="blog.html">Блог</a>
+									</li>
+									<li>
+										<a href="http://yubutsan.com.ua/#contacts">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="blog-title mt4">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="img-wrap">
+								<img src="img/sticky-waypoints.jpg" alt="sticky-waypoints.jpg">
+							</div>	
+						</div>
+						<div class="col-sm-6">
+						<ul class="blog-breadcrumbs">
+							<li>
+								<a href="index.html">главная</a>
+							</li>
+							<li>
+								<a href="blog.html">блог</a>
+							</li>
+							<li>Подсветка пунктов главного меню при скроллинге с помощью Waypoints</li>
+						</ul>
+							<ul class="soc-wrap">
+								<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+								<li>
+									<button>
+										<i class="fa fa-eye"></i>
+									</button>
+								</li>
+								<li>
+									<button>
+										<i class="fa fa-heart-o"></i>
+									</button>
+								</li>
+							</ul>
+							<div class="blog-date">
+								<span>21</span>
+								<span>April</span>
+								<span>2018</span>
+							</div>
+							<h4 class="title-cont">Подсветка пунктов главного меню при скроллинге с помощью Waypoints</h4>
+							<a href="" rel="nofollow" target="_blank" class="blog-author-wrap">
+								<img src="img/my-foto.png" alt="logo-developer.png">
+								<span>Yuriy Butsan</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blog-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+						<div class="article-content">
+							<p>Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта. Разберем на простом примере, как это реализовать.</p>
+							<h5>Начинаем с базовой HTML структуры</h5>
+								<div class="code-wrap">
+									<pre><code id="copy-code1">&#60body&#62
+&#60header&#62
+	&#60nav&#62
+		&#60ul&#62
+			&#60li&#62
+				&#60a&#62&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a&#62&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a&#62&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a&#62&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a&#62&#60/a&#62
+			&#60/li&#62
+		&#60/ul&#62
+	&#60/nav&#62
+	&#60h1&#62Header&#60/h1&#62
+&#60/header&#62
+&#60main&#62
+	&#60section&#62
+		&#60h1&#62Section 1&#60/h1&#62
+	&#60/section&#62
+	&#60section&#62
+		&#60h1&#62Section 2&#60/h1&#62
+	&#60/section&#62
+	&#60section&#62
+		&#60h1&#62Section 3&#60/h1&#62
+	&#60/section&#62
+	&#60section&#62
+		&#60h1&#62Section 4&#60/h1&#62
+	&#60/section&#62
+&#60/main&#62
+&#60/body&#62</code><button class="btn-clipboard" data-clipboard-target="#copy-code1"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<h5>Далее необходимо добавить атрибуты и их значения: id и class, так мы связываем секции с пунктами в меню</h5>
+								<div class="code-wrap">
+									<pre><code id="copy-code2">&#60body&#62
+&#60header id="header-display" class="wp-zone"&#62
+	&#60nav class="fixed-nav-menu"&#62
+		&#60ul&#62
+			&#60li&#62
+				&#60a href="#header-display" class="disable-click"&#62Header&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a href="#section-one"&#62Section 1&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a href="#section-two"&#62Section 2&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a href="#section-three"&#62Section 3&#60/a&#62
+			&#60/li&#62
+			&#60li&#62
+				&#60a href="#section-four"&#62Section 4&#60/a&#62
+			&#60/li&#62
+		&#60/ul&#62
+	&#60/nav&#62
+	&#60h1&#62Header&#60/h1&#62
+&#60/header&#62
+&#60main&#62
+	&#60section id="section-one" class="wp-zone"&#62
+		&#60h1&#62Section 1&#60/h1&#62
+	&#60/section&#62
+	&#60section id="section-two" class="wp-zone"&#62
+		&#60h1&#62Section 2&#60/h1&#62
+	&#60/section&#62
+	&#60section id="section-three" class="wp-zone"&#62
+		&#60h1&#62Section 3&#60/h1&#62
+	&#60/section&#62
+	&#60section id="section-four" class="wp-zone"&#62
+		&#60h1&#62Section 4&#60/h1&#62
+	&#60/section&#62
+&#60/main&#62
+&#60/body&#62</code><button class="btn-clipboard" data-clipboard-target="#copy-code2"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<h5>Подключаем каскадные таблицы стилей {CSS}</h5>
+								<div class="code-wrap">
+									<pre><code id="copy-code3">body{
+	margin: 0;
+	padding: 0;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	color: #FFFFF0;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+a, button{
+	text-decoration: none;
+	border: none;
+	color: #434343;
+}
+header{
+	height: 100vh;
+	border-bottom: 1px solid #FFFFF0;
+	background: #DA4453;
+	background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+	background: linear-gradient(to right, #89216B, #DA4453);
+}
+section {
+	min-height: 754px;
+	position: relative;
+	border-bottom: 1px solid #FFFFF0;
+}
+body section:nth-child(1){
+	background: #355C7D;
+	background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+	background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+}
+body section:nth-child(2){
+	background: #ad5389;
+	background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+	background: linear-gradient(to right, #3c1053, #ad5389);
+}
+body section:nth-child(3){
+	background: #000046;
+	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+	background: linear-gradient(to right, #1CB5E0, #000046);
+}
+body section:nth-child(4){
+	background: #4B79A1;
+	background: -webkit-linear-gradient(to bottom, #283E51, #4B79A1);
+	background: linear-gradient(to bottom, #283E51, #4B79A1);
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FFFFF0;
+  letter-spacing: 3px;
+  padding: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.fixed-nav-menu{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 21px;
+  z-index: 1;
+  background-color: #FFFFF0;
+  box-shadow: 0 1px 3px #434343;
+  -webkit-box-shadow: 0 1px 3px #434343;
+  transition: top .5s;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -o-transition: top .5s;
+}
+.fixed-nav-menu li{
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+}
+.fixed-nav-menu a{
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  padding: 20px 5px;
+  line-height: 38px;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.fixed-nav-menu a:hover{
+  color: #DA4453;
+}
+.disable-click{
+  color: #DA4453;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s
+}
+.disable-click:before,
+.disable-click:after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 14px;
+  bottom: 49%;
+  background-color: #DA4453;
+}
+.disable-click:before{
+  left: -12px;
+}
+.disable-click:after{
+  right: -12px;
+}
+@media only screen and (max-width: 768px){
+  h1{font-size:20px;}
+}</code><button class="btn-clipboard" data-clipboard-target="#copy-code3"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>Итак HTML-структура есть, стили установили. Теперь самый интересный и сложный этап.
+								<h5>Необходимо добавить действие при скроллинге.</h5>
+								<p>Конечно же здесь без Javascript нам необойтись. Я буду использовать библиотеку JQuery. Итого сразу подключаем библиотеку JQuery.</p>
+								<div class="code-wrap">
+									<pre><code id="copy-code4">&#60script type="text/javascript" src="libs/jQuery/jquery-3.2.1.min.js"&#62&#60/script&#62</code><button class="btn-clipboard" data-clipboard-target="#copy-code4"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>Так же необходимо подключить библиотеку Waypoints.js, которую скачиваем по <a href="http://imakewebthings.com/waypoints/" rel="nofollow" target="_blank">ссылке</a></p>
+								<div class="code-wrap">
+									<pre><code id="copy-code5">&#60script src="libs/waypoints/jquery.waypoints.min.js"&#62&#60/script&#62</code><button class="btn-clipboard" data-clipboard-target="#copy-code5"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>Waypoints - это библиотека, которая значительно упрощает выполнение функции каждый раз ,когда мы переходим к элементу с помощью скроллинга, т.е. мі можем показывать любой элемент при нахождении посетителя в заданной точке страницы.</p>
+								<p>Давайте теперь на примере (js код ниже) рассмотрим, как нам подсветить пункт меню навигации при нахождении пользователя на определённой секции.</p>
+								<div class="code-wrap">
+									<pre><code id="copy-code6">$(document).ready(function(){
+//down
+  $('.wp-zone').waypoint(function(direction) {
+  if (direction === 'down') {
+    $('nav a').removeClass('disable-click');
+    // form the selector dynamically.
+    // "this" keyword refers waypoint object and the element is located at "this.element"
+    // using "this.element.id", get the nav anchor you want to target
+    // example: "nav a[href='#landing']"
+    var selector = "nav a[href='#" + this.element.id + "']"; 
+    $(selector).addClass('disable-click');
+  }
+  }, {
+  offset: '5%'
+});
+
+//up
+  $('.wp-zone').waypoint(function(direction) {
+    if (direction === 'up') {
+      $('nav a').removeClass('disable-click');
+      var selector = "nav a[href='#" + this.element.id + "']"; 
+      $(selector).addClass('disable-click');
+    }
+  }, {
+    offset: '-50%'
+});   
+});</code><button class="btn-clipboard" data-clipboard-target="#copy-code6"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>С кодом предалагаю разобраться самостоятельно, т.к. он на 10 строк, с читабельной структурой и понятными комментариями. Вот и все, пункты нашего меню подсвечиваются при нахождении пользователя в области секции.</p>
+								<h5>Успехов в изучении!</h5>
+								<div class="share-wrap mt5 mb5">
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.facebook('http://yubutsan.com.ua/article.html','Подсветка пунктов главного меню при скроллинге с помощью Waypoints','http://yubutsan.com.ua/img/sticky-waypoints.jpg','Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта...')" class="main-btn-rect share-btn facebook"><i class="fa fa-facebook"></i>
+										</button>
+									</div>
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.vkontakte('http://yubutsan.com.ua/article.html','Подсветка пунктов главного меню при скроллинге с помощью Waypoints','http://yubutsan.com.ua/article.html','Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта...')" class="main-btn-rect share-btn vk"><i class="fa fa-vk"></i></button>
+									</div>
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.twitter('http://yubutsan.com.ua/article.html','Подсветка пунктов главного меню при скроллинге с помощью Waypoints')" class="main-btn-rect share-btn twitter"><i class="fa fa-twitter"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="codepen mb4">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+						 <div class="title-section mt3 mb5"> 
+								<h3 class="pt2">Результат</h3>
+							</div>
+							<iframe height='360' scrolling='no' title='Automatically highlight current page in navigation with Waypoints' src='//codepen.io/0neLife/embed/EErRBb/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/0neLife/pen/EErRBb/'>Automatically highlight current page in navigation with Waypoints</a> by Yuriy Butsan (<a href='https://codepen.io/0neLife'>@0neLife</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-wrap">
+				<div class="container">
+		  		<div class="row">
+						<div class="col-sm-4 col-xs-6">
+							<div class="copy">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+									<i class="fa fa-copyright"></i>2018
+									<span>yubutsan.com.ua</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6 center">
+							<ul class="soc-wrap">
+				  			<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+				  		</ul>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="dev">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">Create by
+									<span>Yuriy Butsan</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<link rel="stylesheet" href="libs/highlight/monokai-sublime.css">
+		<link rel="stylesheet" href="css/article.css">
+		<script src="libs/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="libs/highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="libs/clipboard/clipboard.min.js"></script>
+		<script>
+			$('.burger-btn').on('click', function(){
+			    $(this).toggleClass('active');
+			    $('.fixed-menu nav').slideToggle('fast');
+			  });
+		</script>
+		<script>
+			$('.btn-clipboard').click(function(){
+  var clipboard =  new Clipboard('.btn-clipboard');
+  $(this).addClass('active');
+  var copy = setInterval(function(){
+     $('.btn-clipboard').removeClass('active');
+     clearInterval(copy);
+   }, 1500);
+});
+		</script>
+		<script>
+			Share = {
+				vkontakte: function(purl, ptitle, pimg, text) {
+					url  = 'http://vkontakte.ru/share.php?';
+					url += 'url='          + encodeURIComponent(purl);
+					url += '&title='       + encodeURIComponent(ptitle);
+					url += '&description=' + encodeURIComponent(text);
+					url += '&image='       + encodeURIComponent(pimg);
+					url += '&noparse=true';
+					Share.popup(url);
+				},
+				facebook: function(purl, ptitle, pimg, text) {
+					url  = 'http://www.facebook.com/sharer.php?s=100';
+					url += '&p[title]='     + encodeURIComponent(ptitle);
+					url += '&p[summary]='   + encodeURIComponent(text);
+					url += '&p[url]='       + encodeURIComponent(purl);
+					url += '&p[images][0]=' + encodeURIComponent(pimg);
+					Share.popup(url);
+				},
+				twitter: function(purl, ptitle) {
+					url  = 'http://twitter.com/share?';
+					url += 'text='      + encodeURIComponent(ptitle);
+					url += '&url='      + encodeURIComponent(purl);
+					url += '&counturl=' + encodeURIComponent(purl);
+					Share.popup(url);
+				},
+				popup: function(url) {
+					window.open(url,'','toolbar=0,status=0,width=626,height=436');
+				}
+			};
+		</script>
+	</body>
+</html>

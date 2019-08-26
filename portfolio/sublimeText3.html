@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- <base href="http://yubutsan.com.ua/"> -->
+		<meta charset="UTF-8">
+		<title>Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки</title>
+		<meta name="description" content="Sublime Text 3 — кроссплатформенный текстовый редактор. В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС...">
+		<meta name="keywords" content="sublimeText3, jquery, css3, js, plugins">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:url" content="http://yubutsan.com.ua/blog/sublimeText3.html">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки">
+		<meta property="og:description" content="Sublime Text 3 — кроссплатформенный текстовый редактор. В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС...">
+		<meta property="og:image" content="img/sublimeText3logo.png">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nav-btn.css">
+		<link rel="next" href="blog/sublimeText3?page=2&amp;cultureKey=">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120537633-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-120537633-1');
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="fixed-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+								<img src="img/logo-dev-white.png" alt="logo-dev-white.png"><span>Front-End Developer</span>
+							</a>
+							<div class="burger-btn" data-menu="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="col-sm-9 center">
+							<nav class="fixed-nav-menu">
+								<ul>
+									<li>
+										<a href="index.html">Главная</a>
+									</li>
+									<li>
+										<a href="resume.html">О себе</a>
+									</li>
+									<li>
+										<a href="blog.html">Блог</a>
+									</li>
+									<li>
+										<a href="http://yubutsan.com.ua/#contacts">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="blog-title mt4">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="img-wrap">
+								<img src="img/sublimeText3logo.png" alt="sublimeText3logo.png">
+							</div>	
+						</div>
+						<div class="col-sm-6">
+						<ul class="blog-breadcrumbs">
+							<li>
+								<a href="index.html">главная</a>
+							</li>
+							<li>
+								<a href="blog.html">блог</a>
+							</li>
+							<li>Советы по использованию Sublime Text 3</li>
+						</ul>
+							<ul class="soc-wrap">
+								<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+								<li>
+									<button>
+										<i class="fa fa-eye"></i>
+									</button>
+								</li>
+								<li>
+									<button>
+										<i class="fa fa-heart-o"></i>
+									</button>
+								</li>
+							</ul>
+							<div class="blog-date">
+								<span>07</span>
+								<span>June</span>
+								<span>2018</span>
+							</div>
+							<h4 class="title-cont">Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки.</h4>
+							<a href="" rel="nofollow" target="_blank" class="blog-author-wrap">
+								<img src="img/my-foto.png" alt="logo-developer.png">
+								<span>Yuriy Butsan</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blog-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="article-content">
+								<p>
+									<strong>Sublime Text 3</strong> — кроссплатформенный текстовый редактор. Один из самых распространённых качественных инструментов для разработчика. Мой выбор также пал на Sublime Text, и я очень рад этому, так как использую его и сейчас в ежедневной работе. Рекомендую начинающим фронт-энд разработчикам: легкий, удобный и интуитивно понятный текстовый редактор. Описание основных характеристик можно почитать <a href="http://sublimetext.ru" rel="nofollow" target="_blank">здесь.</a></p>
+								<p>В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС.</p>
+								<blockquote>Использовал платформу Windows, поэтому сочетание клавиш может не соответствовать при использовании OSX. Информацию об использовании горячих клавиш можно посмотреть здесь <a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html" rel="nofollow" target="_blank">engРесурс</a> или <a rel="nofollow" target="_blank" href="http://sublimetext.ru/documentation">rusРесурс</a></blockquote>
+								<p>Статья довольно информативная, поэтому я подготовил для вас содержание, чтобы можно было легко сориентироваться:</p>
+								<div class="tableOfContents">
+									<ul>
+										<li>
+											<a href="#installSubT">Шаг 1. Установка Sublime Text 3</a>
+										</li>
+										<li>
+											<a href="#packageControl">Шаг 2. Подключение Package Control</a>
+										</li>
+										<li>
+											<a href="#installPlugins">Шаг 3. Установка плагинов</a>
+										</li>
+										<li>
+											<a href="#settingsSubT">Шаг 4. Тонкие ручные настройки Sublime Text 3</a>
+										</li>
+										<li>
+											<a href="#speedSettingsSubT">Шаг 5. Быстрый перенос Sublime Text 3 на другой PC</a>
+										</li>
+									</ul>
+								</div>
+								<h5 id="installSubT">Шаг 1. Установка Sublime Text 3</h5>
+								<p>Скачиваем текстовый редактор здесь <a href="http://www.sublimetext.com/" rel="nofollow" target="_blank">Download Sublime Text 3</a></p>
+								<div class="img-wrap">
+									<img src="img/sublimeTextInstall1.png" alt="sublimeTextInstall1.png">
+								</div>
+								<p>Выбираем версию в соответствии с ОС:</p>
+								<div class="img-wrap">
+									<img src="img/sublimeTextInstall2.png" alt="sublimeTextInstall2.png">
+								</div>
+								<p>Открываем скаченный файл и начинаем установку. Принимаем все значения по умолчанию. Итак, текстовый редактор Sublime Text установлен!</p>
+								<blockquote>Рекомендую использовать Sublime Text с интерфейсом на английском языке. К этому вы привыкнете очень быстро, поверьте, но при этом получите массу плюсов ввиду словарного запаса английских слов, с которыми очень часто будете сталкиваться, также много качественной литературы, решений в разы быстрее и легче найти на английском языке.</blockquote>
+								<h5 id="packageControl">Шаг 2. Подключение Package Control в Sublime Text</h5>
+								<blockquote>Package Control необходим для того, чтобы можно было устанавливать дополнения и плагины в Sublime Text из репозитория пакетов. Полное описание всех плагинов здесь <a href="https://packagecontrol.io/" rel="nofollow" target="_blank">PackageControl</a></blockquote>
+								<p>В версии Sublime Text 3 разработчик позаботился о пользователях и добавил Package Control автоматически с установкой текстового редактора. Давайте проверим. Заходим в Sublime Text 3 нажимаем <kbd>ctrl+shift+p</kbd> ( или  <em>Preference > Package Control</em> ) в меню вводим Package и видим, что Package Control установлен.</p>
+								<div class="img-wrap">
+									<img src="img/package1.jpg" alt="package1.jpg">
+								</div>
+								<p>Чтобы установить Package Control самостоятельно перейдите по ссылке <a href="https://packagecontrol.io/installation" rel="nofollow" target="_blank">installPackageControl</a></p>
+								<p>Видим 2 способа подключения: Simple и Manual. Рекомендую использовать вариант Simple. Для этого необходимо скопировать код (выделил красным), открываем консоль в Sublime Text ( <kbd>Ctrl+`</kbd>  или <em>View > Show console</em> ), вставляем скопированный код и ожидаем завершения установки. После успешного завершения необходимо перезагрузить текстовый редактор.</p>
+								<div class="img-wrap">
+									<img src="img/packageControlSimpleInstall.png" alt="packageControlSimpleInstall.png">
+								</div>
+								<div class="img-wrap">
+									<img src="img/sublime-text-plugins-command-palette.gif" alt="sublime-text-plugins-command-palette.gif">
+								</div>
+								<p>Проверяем наличие Package Control. Видим, что в порядке, теперь можно перейти к следующему шагу.</p>
+								<h5 id="installPlugins">Шаг 3. Установка плагинов</h5>
+								<p>В Package Control вы можете подключить огромное количество плагинов из доступных пакетов, но как правило, вы не будете использовать больше 15. Предлагаю свой вариант сборки необходимых плагинов, которые значительно упрощают разработку.</p>
+								<blockquote>Для установки плагинов в Sublime Text через Package Control необходимо вызвать меню, как мы это делали ранее: <kbd>Ctrl+Shift+P</kbd> или <em>Preference > Package Control</em> . Затем вводим команду "Install Package" и выбираем нужный пакет из списка.</blockquote>
+								<div class="img-wrap">
+									<img src="img/installPackage1.png" alt="installPackage1.png">
+								</div>
+								<p>Также обратите внимание, что часть плагинов уже может быть установлена по умолчанию. Как мы видим на скриншоте: AutoFileName, BracketHighlighter, Color Highlighter, Emmet, LiveReload.</p>
+								<div class="img-wrap">
+									<img src="img/PackageControlsDefault.png" alt="PackageControlsDefault.png">
+								</div>
+								<h5>Плагины, которые рекомендую установить:</h5>
+								<h5>1. Emmet</h5>
+								<p>Ускоряет написание HTML и CSS кода. Набираете <kbd>!+Tab</kbd> и получаете базовую HTML разметку. Неправда ли, как это упрощаете и ускоряет верстку?</p>
+								<div class="img-wrap">
+									<img src="img/Emmet1.png" alt="Emmet1.png">
+								</div>
+								<p>Или вот еще один вариант:</p>
+								<div class="img-wrap">
+									<img src="img/sublime-text-plugins-emmet.gif" alt="sublime-text-plugins-emmet.gif">
+								</div>
+								<p>Ну разве это не совершенно? Подробный справочник сокращений для ускорения верстки по ссылке <a href="https://webdesign-master.ru/blog/html-css/2.html" rel="nofollow" target="_blank">EmmetDescription</a></p>
+								<h5>2. AutoFileName </h5>
+								<p>В помощь при написании путей до внешних файлов: картинки, плагины, таблицы стилей и т.д.</p>
+								<div class="img-wrap">
+									<img src="img/sublime-text-plugins-autofilename.gif" alt="sublime-text-plugins-autofilename.gif">
+								</div>
+								<h5>3. Sass</h5>
+								<p>Плагин для подсветки Sass синтаксиса кода в Sass и Scss файлах.  Первое время у вас не будет необходимости его использовать, но когда увидите, что у вас начало появляться много рутины, то это именно, то что нужно автоматизировать, также код уже стал большим и тяжело читабельным, тогда здесь и будете приступать к изучению новых технологий gulp, jade, sass. Вот тогда и почувствуете все прелести этого плагина.</p>
+								<h5>4. OneDarkMaterial and OneDark Color Scheme</h5>
+								<p>Тема оформления UI Sublime Text и цветовая схема для подсветки кода. Мне нравится данная тема, когда сидишь сутками за монитором начинаешь понимать все мелочи интерфейса, для меня данная тема сильно снижает нагрузку на глаза за счет удобной читабельности в сравнении с темой по умолчанию и многими другими.</p>
+								<p>После установки пакета необходимо зайти в <em>Preferences.sublime-settings | Preferences > Settings</em> и установить дополнительные настройки</p>
+								<div class="img-wrap">
+									<img src="img/OneDarkMaterial.png" alt="OneDarkMaterial.png">
+								</div>
+								<h5>5. BufferScroll</h5>
+								<p>Превосходный плагин, который при повторном открытии документа устанавливает курсор на том месте, на котором вы закончили редактирование в прошлый раз, и вам не приходиться искать все заново. Подключается внешним способом, перейдите на <a href="https://github.com/titoBouzout/BufferScroll" rel="nofollow" target="_blank">GitHub страницу плагина</a> , скачайте и распакуйте его в любое удобное место на вашем диске. Далее в Sublime Text выбираем пункт меню <em>Preferences > Browse Packeges </em> . Откроется папка пользовательских данных на вашем диске. Скопируйте сюда папку, содержащую файлы Buffer Scroll и перезапуститие Sublime Text. Теперь плагин работает! </p>
+								<div class="img-wrap">
+									<img src="img/BufferScroll.png" alt="BufferScroll.png">
+								</div>
+								<h5>6. Autoprefixer</h5>
+								<p>Добавляет вендорные префиксы для обработки различных механизмов рендеринга. Они в основном используются для движков WebKit, Gecko и Microsoft, которые сгруппированы в качестве «vendor prefixes». (-moz-, -webkit-,-ms-,-o-)</p>
+								<div class="img-wrap">
+									<img src="img/02-autoprefixer-addon.gif" alt="02-autoprefixer-addon.gif">
+								</div>
+								<h5>7. Livereload</h5>
+								<p>Позволяет редактировать код и обновлять страницу сайта на локальном сервере в реальном времени. Т.е. я редактирую код страницы и она автоматически обновляется, показывая мне изменения. Незабываем, что в html файле нужно будет подключить отдельный скрипт для работы этого плагина. Отличное решение, но как только приступите к изучению комлектовщика проектов (я использую Gulp) тогда потребности не будет в этом плагине, но первое время очень сильно экономит время. Подробное руководство по установке <a href="https://www.youtube.com/watch?v=_cbgjtUhjyY" rel="nofollow" target="_blank">LiveReloadInstall</a></p>
+								<h5>8. Colorhighlighter, ColorPicker</h5>
+								<p>Палитра + background при :input in Sublime. Этот плагин позволит визуально выделять цвета, указанные в CSS-файлах. Вы сможете увидеть написанный цвет в режиме реального времени. Также, в Color Highlighter есть поддержка Sass, Less и Stylus, благодаря чему этот плагин становится пригодным для любых боевых условий.</p>
+								<div class="img-wrap">
+									<img src="img/ColorHightLighter.png" alt="ColorHightLighter.png">
+								</div>
+								<h5>9. CSS comb</h5>
+								<p>Чистый, красивый код. Звучит немножко странно, но действительно данный плагни форматирует ваш CSS (и Sass) в соответствии с предпочтительным стилем.Полезно для тех разработчиков, которые любят в алфавитном порядке все или предпочитают группировать определенные правила вместе.</p>
+								<h5>10. Alignment</h5>
+								<p>Функциональное выравнивание фрагментов кода. поможет вам взмахом руки <kbd>Ctrl+Alt+A</kbd> выровнять выделенный текст согласно заданным настройкам. Это означает, что вы можете выровнять несколько выборок или строк через разделитель, например <kbd>=</kbd> . Просто наберите <kbd>ctrl + alt + a</kbd> на Windows или <kbd>cmd + ctrl + a</kbd> на Mac, чтобы выровнять свой выбор. Подробное руководство можно найти здесь <a href="https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-sublime-alignment/" rel="nofollow" target="_blank">AligmentTutorial</a></p>
+								<h5>11. SublimeLinter </h5>
+								<p>Программа, которая сканирует ваш код и обнаруживает ошибки. Пропущенный <em>" ; "</em> или <em>" пробел "</em> или <em>" { "</em>. Какая бы ошибка ни была, она откроет ее. Linter присутствует для нескольких языков. Обычно вам необходимо установить основной пакет linter, а затем добавить отдельные надстройки на основе языка-интерфейса.</p>
+								<h5 id="settingsSubT">Шаг 4. Тонкие ручные настройки Sublime Text 3</h5>
+								<p> Заходим в Sublime Text 3 далее <em>Preferences.sublime-settings | Preferences > Settings</em> . Ы В открывшемся окне <em>Preferences.sublime-settings |  User</em> вставляем код, что указан ниже:</p>
+								<div class="code-wrap">
+									<pre><code id="copy-code1">{
+	"color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
+	"font_size": 9,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Color Highlighter",
+		"Vintage"
+	],
+	"tab_size": 2,
+	"theme": "OneDarkMaterial.sublime-theme"
+}</code><button class="btn-clipboard" data-clipboard-target="#copy-code1"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>Для клавиатурных сокращений заходим в <em>Default (Windows).sublime-keymap | Preferences > Key Bindings:</em></p>
+								<div class="code-wrap">
+									<pre><code id="copy-code2">[	
+	    { "keys": ["alt+shift+f"], "command": "reindent" },
+
+]</code><button class="btn-clipboard" data-clipboard-target="#copy-code2"><i class="fa fa-clone"></i></button></pre>
+								</div>
+								<p>Теперь если нажать <kbd>Alt+Shift+F</kbd>  код будет автоматически выравниваться отступами с соответствующей иерархией вложенности элементов.</p>
+								<h5 id="speedSettingsSubT">Шаг 5. Быстрый перенос Sublime Text 3 на другой PC</h5>
+								<p>Для того, чтобы сделать быстро развернуть Sublime Text на другом рабочем месте, достаточно скопировать папку <em>"C:\Users\Имя пользователя\AppData\Roaming\Sublime Text 3"</em> в безопасное место на вашем диске или на флешку, а потом разместить у другого пользователя или на другом компьютере в этой-же директории под пользователем.Показать меню можно нажатием клавишы <kbd>alt</kbd> на клавиатуре.</p>
+								<p>Если у вас все получилось, то должен выйти нижеприведённый результат с учетом установки всех плагинов. </p>
+								<p>Спасибо за внимание, вдохновения и радости от проделанной работы!</p>
+								<div class="share-wrap mt5 mb5">
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.facebook('http://yubutsan.com.ua/sublimeText3.html','Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки.','http://yubutsan.com.ua/img/sublimeText3logo.png','Sublime Text 3 — кроссплатформенный текстовый редактор. В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС...')" class="main-btn-rect share-btn facebook"><i class="fa fa-facebook"></i>
+										</button>
+									</div>
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.vkontakte('http://yubutsan.com.ua/sublimeText3.html','Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки.','http://yubutsan.com.ua/sublimeText3.html','Sublime Text 3 — кроссплатформенный текстовый редактор. В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС...')" class="main-btn-rect share-btn vk"><i class="fa fa-vk"></i></button>
+									</div>
+									<div class="col-sm-4">
+										<button type="button" onclick="Share.twitter('http://yubutsan.com.ua/sublimeText3.html','Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки.')" class="main-btn-rect share-btn twitter"><i class="fa fa-twitter"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="codepen mb4">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+						 <div class="title-section mt3 mb5"> 
+								<h3 class="pt2">Результат</h3>
+							</div>
+							<div class="img-wrap">
+								<img src="img/SubTResult.png" alt="SubTResultpng">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-wrap">
+				<div class="container">
+		  		<div class="row">
+						<div class="col-sm-4 col-xs-6">
+							<div class="copy">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+									<i class="fa fa-copyright"></i>2018
+									<span>yubutsan.com.ua</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6 center">
+							<ul class="soc-wrap">
+				  			<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+				  		</ul>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="dev">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">Create by
+									<span>Yuriy Butsan</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<link rel="stylesheet" href="libs/highlight/monokai-sublime.css">
+		<link rel="stylesheet" href="css/article.css">
+		<script src="libs/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="libs/highlight/highlight.pack.js"></script>
+		<script>
+			hljs.configure({tabReplace: '   ' /*2 spaces*/ })
+		</script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="libs/clipboard/clipboard.min.js"></script>
+		<script>
+			$('.burger-btn').on('click', function(){
+			    $(this).toggleClass('active');
+			    $('.fixed-menu nav').slideToggle('fast');
+			  });
+		</script>
+		<script>
+			$('.btn-clipboard').click(function(){
+  var clipboard =  new Clipboard('.btn-clipboard');
+  $(this).addClass('active');
+  var copy = setInterval(function(){
+     $('.btn-clipboard').removeClass('active');
+     clearInterval(copy);
+   }, 1500);
+});
+		</script>
+		<script>
+			Share = {
+				vkontakte: function(purl, ptitle, pimg, text) {
+					url  = 'http://vkontakte.ru/share.php?';
+					url += 'url='          + encodeURIComponent(purl);
+					url += '&title='       + encodeURIComponent(ptitle);
+					url += '&description=' + encodeURIComponent(text);
+					url += '&image='       + encodeURIComponent(pimg);
+					url += '&noparse=true';
+					Share.popup(url);
+				},
+				facebook: function(purl, ptitle, pimg, text) {
+					url  = 'http://www.facebook.com/sharer.php?s=100';
+					url += '&p[title]='     + encodeURIComponent(ptitle);
+					url += '&p[summary]='   + encodeURIComponent(text);
+					url += '&p[url]='       + encodeURIComponent(purl);
+					url += '&p[images][0]=' + encodeURIComponent(pimg);
+					Share.popup(url);
+				},
+				twitter: function(purl, ptitle) {
+					url  = 'http://twitter.com/share?';
+					url += 'text='      + encodeURIComponent(ptitle);
+					url += '&url='      + encodeURIComponent(purl);
+					url += '&counturl=' + encodeURIComponent(purl);
+					Share.popup(url);
+				},
+				popup: function(url) {
+					window.open(url,'','toolbar=0,status=0,width=626,height=436');
+				}
+			};
+		</script>
+	</body>
+</html>

@@ -1,328 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Резюме</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="img/favicon.png">
-	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
-</head>
-<body>
-	<header class="blog-inner-menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 vcenter">
-					<a href="index.html">
-						<img src="img/my-logo-w.png" alt=""> Front-end Developer
-					</a>
-				</div> 
-				<div class="col-sm-9 vcenter">
-					<nav class="blog-nav-menu">
-						<ul>
-							<li>
-								<a href="index.html">Главная</a>
-							</li>
-							<li>
-								<a href="resume.html">О себе</a>
-							</li>
-							<li>
-								<a href="#">Портфолио</a>
-							</li>
-							<li>
-								<a href="blog-page.html">Блог</a>
-							</li>
-							<li>
-								<a href="index.html#contact">Контакты</a>
-							</li>
-						</ul>				
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="main-resume-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 first-block">
-						<div class="ava-wrap">
-							<a href="index.html">
-								<img src="img/my-foto.png" alt="my-foto">
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Front-end developer Резюме</title>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nav-btn.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120537633-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-120537633-1');
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="fixed-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+								<img src="img/logo-dev-white.png" alt="logo-dev-white.png"><span>Front-End Developer</span>
 							</a>
-						</div>
-						<div class="title-text-resume">
-							<h1>Юрий Буцан</h1>
-							<h2>Front-end developer</h2>
-						</div>
-						<div class="skill-block">
-							<div class="skill-block-head">
-								<i class="fa fa-sticky-note-o"></i>
-								<h5>
-									<strong>О себе</strong>
-								</h5>
+							<div class="burger-btn" data-menu="false">
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
-								<p>Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. 
-								Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал.
-								Свободное время посвящаю активному отдыху, просмотру фильмов и хорошему настроению.</p>
 						</div>
-						<div class="skill-block">
-							<div class="skill-block-head">
-								<i class="fa fa-address-book-o"></i>
-								<h5>
-									<strong>контакты</strong>					
-								</h5>
-							</div>
-							<ul>
-								<li>
-									<i class="fa fa-map-marker"></i>Украина, Киев
-								</li>
-								<li>
-									<a href="tel:+380938923063">
-										<i class="fa fa-phone"></i>+380938923063
-									</a>
-								</li>
-								<li>
-									<a href="mailto: butsan.yuriy@gmail.com">
-										<i class="fa fa-envelope"></i>butsan.yuriy@gmail.com
-									</a>
-								</li>
-								<li>
-									<a href="skype: yuriy_butsan?call">
-										<i class="fa fa-skype"></i>yuriy_butsan
-									</a>
-								</li>
-							</ul> 
-						</div>
-						<div class="skill-block">
-							<div class="skill-block-head">
-							<i class="fa fa-thumbs-o-up"></i>
-							<h5>
-								<strong>Хобби</strong>					
-							</h5>
-							</div>
-							<ul class="my-hobbies">
-								<li>
-									<i class="fa fa-futbol-o"></i>
-									<br>Спорт</br>
-								</li>
-								<li>
-									<i class="fa fa-gamepad"></i>
-									<br>Игры</br>
-								</li>
-								<li>
-									<i class="fa fa-coffee"></i>
-									<br>Кофе</br>
-								</li>
-								<li>
-									<i class="fa fa-film"></i>
-									<br>Фильмы</br>
-								</li>
-							</ul>
-						</div>
-							<div class="skill-block">
-								<div class="skill-block-head">
-									<i class="fa fa-users"></i>
-									<h5>
-										<strong>соц сети</strong>					
-									</h5>
-								</div>
+						<div class="col-sm-9 center">
+							<nav class="fixed-nav-menu">
 								<ul>
 									<li>
-										<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
-											<i class="fa fa-facebook"></i>facebook
-										</a>
+										<a href="index.html">Главная</a>
 									</li>
 									<li>
-										<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
-											<i class="fa fa-linkedin"></i>linkedin
-										</a>
+										<a href="resume.html" class="disable-click">О себе</a>
 									</li>
 									<li>
-										<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
-											<i class="fa fa-github"></i>github
-										</a>
+										<a href="blog.html">Блог</a>
 									</li>
 									<li>
-										<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
-											<i class="fa fa-codepen"></i>codepen
-										</a>
+										<a href="http://yubutsan.com.ua/#contacts">Контакты</a>
 									</li>
-									<li>
-										<a href="https://ru.pinterest.com/butsanyuriy/" rel="nofollow" target="_blank">
-											<i class="fa fa-pinterest-p"></i>pinterest
-										</a>
-									</li>
-								</ul> 
-							</div>
+								</ul>
+							</nav>
 						</div>
-					<div class="col-md-8 second-block">
-						<div class="skill-block">
-							<div class="skill-block-head">
-								<i class="fa fa-desktop"></i>
-								<h5>
-									<strong>Опыт работы</strong>				
-								</h5>
-							</div>
-							<div class="col-sm-3 resume-time">
-								<span>2017</span>
-								<span>настоящее время</span>
-							</div>
-							<div class="col-sm-9 resume-descr">
-								<h3>Front-end developer</h3>
-								<h6>Freelance</h6>
-								<p> Предоставление UI/UX рекоммендаций. Разработка адаптивного веб-дизайна.  Верстка новых страниц из PSD макетов. Реализация JavaScript логики (слайдеры, табы, анимации и т.д.)</p>
-							</div>
-							<div class="col-sm-3 resume-time">
-								<span>2015</span>
-								<span>настоящее время</span>
-							</div>
-							<div class="col-sm-9 resume-descr">
-								<h3>Senior Consultant in ABM Rinkai Implementation Team</h3>
-								<h6>
-									<a href="http://abmcloud.com/" rel="nofollow" target="_blank">ABM Cloud
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-res-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="first-part">
+								<div class="ava-wrap">
+									<a href="index.html">
+										<img src="img/my-foto.jpg" alt="my-foto">
 									</a>
-								</h6>
-								<p>Внедрение системы управления транспортом (TMS) на предприятии. Обследование и оптимизация бизнес-процессов. Интеграция TMS с ERP, реалиация обмена данными csv/xml. Интеграция TMS с GPS-провайдером с помощью http-запросов, SQL to SQL. Формирование ключевых показателей эффективности (KPI) и реализация в бизнес-аналитике Qlik Sense.</p>
+								</div>
+									<div class="title-text-resume">
+										<h1>Юрий Буцан</h1>
+										<h2>Front-end developer</h2>
+									</div>
+									<a href="attach/Yuriy-Butsan.pdf" class="main-btn-rect">
+										<i class="fa fa-download"></i>Скачать Резюме
+									</a>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-sticky-note-o"></i>
+											<h5>О себе</h5>
+										</div>
+										<p class="abme">Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал основан на чистом и структурированом коде. Свободное время посвящаю активному отдыху, просмотру фильмов и хорошему настроению.</p>
+									</div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-address-book-o"></i>
+											<h5>контакты</h5>
+										</div>
+										<ul class="icon-text">
+											<li>
+												<a href="http://www.yubutsan.com.ua/" rel="nofollow" target="_blank">
+													<i class="fa fa-user-secret"></i>www.yubutsan.com.ua
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-street-view"></i>Украина, Киев
+											</li>
+											<li>
+												<i class="fa fa-phone"></i>+380938923063
+											</li>
+											<li>
+												<i class="fa fa-envelope"></i>butsan.yuriy@gmail.com
+											</li>
+											<li>
+												<i class="fa fa-skype"></i>yuriy_butsan
+											</li>
+										</ul> 
+									</div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-thumbs-o-up"></i>
+											<h5>Хобби</h5>
+										</div>
+										<ul class="my-hobbies">
+											<li>
+												<i class="fa fa-futbol-o"></i>
+												<p>Спорт</p>
+											</li>
+											<li>
+												<i class="fa fa-gamepad"></i>
+												<p>Игры</p>
+											</li>
+											<li>
+												<i class="fa fa-coffee"></i>
+												<p>Кофе</p>
+											</li>
+											<li>
+												<i class="fa fa-film"></i>
+												<p>Фильмы</p>
+											</li>
+										</ul>
+									</div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-users"></i>
+											<h5>соц сети</h5>
+										</div>
+										<ul class="icon-text">
+											<li>
+												<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+													<i class="fa fa-facebook"></i>facebook
+												</a>
+											</li>
+											<li>
+												<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+													<i class="fa fa-linkedin"></i>linkedin
+												</a>
+											</li>
+											<li>
+												<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+													<i class="fa fa-github"></i>github
+												</a>
+											</li>
+											<li>
+												<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+													<i class="fa fa-codepen"></i>codepen
+												</a>
+											</li>
+											<li>
+												<a href="https://ru.pinterest.com/butsanyuriy/" rel="nofollow" target="_blank">
+													<i class="fa fa-pinterest-p"></i>pinterest
+												</a>
+											</li>
+										</ul> 
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="skill-block">
-							<div class="skill-block-head">
-								<i class="fa fa-code"></i>
-								<h5>
-									<strong>Профессиональные навыки</strong>			
-								</h5>
-							</div>
-								<div class="col-sm-6">
-									<div class="skill-box">
-										<h4>HTML5</h4>
-										<p>50%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 50%"></div>
+							<div class="col-md-8">
+								<div class="second-part">
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-desktop"></i>
+											<h5>Опыт работы</h5>
+										</div>
+										<div class="col-sm-3">
+											<div class="res-time">
+												<span>2018</span>
+												<span>настоящее время</span>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="res-descr">
+												<h3>Front-end developer</h3>
+													<h6>Freelance</h6>
+													<p> Предоставление UI/UX рекоммендаций. Разработка адаптивного веб-дизайна.  Верстка новых страниц из PSD макетов. Реализация JavaScript логики (слайдеры, табы, анимации и т.д.)</p>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="res-time">
+												<span>2015</span>
+												<span>настоящее время</span>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="res-descr">
+												<h3>Senior Consultant in ABM Rinkai Implementation Team</h3>
+												<h6>
+													<a href="http://abmcloud.com/" rel="nofollow" target="_blank">ABM Cloud</a>
+												</h6>							
+												<p>Внедрение системы управления транспортом (TMS) на предприятии. Обследование и оптимизация бизнес-процессов. Интеграция TMS с ERP, реалиация обмена данными csv/xml. Интеграция TMS с GPS-провайдером с помощью http-запросов, SQL to SQL. Формирование ключевых показателей эффективности (KPI) и реализация в бизнес-аналитике Qlik Sense.</p>
+											</div>
+										</div>										
+									</div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-briefcase"></i>
+											<h5>Примеры работ</h5>
+										</div>
+										<div class="col-sm-12">
+											<div class="col-sm-4">
+												<div class="img-wrap">
+													<a href="https://0nelife.github.io/it-event/" rel="nofollow" target="_blank">
+														<img src="img/it-event.png" alt="it-event.png">
+													</a>
+													<a href="https://0nelife.github.io/it-event/" class="main-btn-rect" rel="nofollow" target="_blank">подробнее</a>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="img-wrap">
+												<a href="https://codepen.io/0neLife/pen/EErRBb" rel="nofollow" target="_blank">
+													<img src="img/hightlightWaypointsjs.png" alt="hightlightWaypointsjs.png">
+												</a>
+												<a href="https://codepen.io/0neLife/pen/EErRBb" class="main-btn-rect" rel="nofollow" target="_blank">подробнее</a>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="img-wrap">
+												<a href="https://codepen.io/0neLife/pen/jKPMwE" rel="nofollow" target="_blank">
+													<img src="img/popupCodepen.png" alt="popupCodepen.png">
+												</a>
+												<a href="https://codepen.io/0neLife/pen/jKPMwE" class="main-btn-rect" rel="nofollow" target="_blank">подробнее</a>
+											</div>
+										</div>
+										</div>
+										
+									</div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-code"></i>
+											<h5>Профессиональные навыки</h5>
+										</div>
+										<div class="col-sm-6">
+											<div class="skill-box">
+												<h4>HTML5</h4>
+												<p>90%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 90%"></div>
+												</div>
+											</div>
+											<div class="skill-box">
+												<h4>CSS3</h4>
+												<p>90%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 90%"></div>
+												</div>
+											</div>
+											<div class="skill-box">
+												<h4>JavaScript</h4>
+												<p>10%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 10%"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="skill-box">
+												<h4>JQuery</h4>
+												<p>40%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 40%"></div>
+												</div>
+											</div>
+											<div class="skill-box">
+												<h4>Git</h4>
+												<p>60%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 60%"></div>
+												</div>
+											</div>
+											<div class="skill-box">
+												<h4>Photoshop</h4>
+												<p>50%</p>
+												<div class="skill">
+													<div class="skill-level" style="width: 50%"></div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="skill-box">
-										<h4>CSS3</h4>
-										<p>50%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 50%"></div>
+									<div class="skill-block">
+										<div class="skill-block-head">
+											<i class="fa fa-graduation-cap"></i>
+											<h5>Образование</h5>
+										</div>
+									<div class="col-sm-3">
+										<div class="res-time">
+											<span>2014</span>
+											<span>2016 гг.</span>
 										</div>
 									</div>
-									<div class="skill-box">
-										<h4>JavaScript</h4>
-										<p>10%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 10%"></div>
+									<div class="col-sm-9">
+										<div class="res-descr">
+											<h3>Логистика</h3>
+											<h6>
+												<a href="https://www.knteu.kiev.ua/" rel="nofollow" target="_blank">КНТЭУ</a>
+											</h6>
+											<p>Окончил Киевский национальный торгово-экономический университет в 2016 году, факультет экономики, менеджмента и права. Получил квалификацию - магистр, специализация - логистика.</p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="res-time">
+											<span>2012</span>
+											<span>2014 гг.</span>
+										</div>
+									</div>
+									<div class="col-sm-9">
+										<div class="res-descr">
+											<h3>Психология</h3>
+											<h6>
+												<a href="http://nuou.org.ua/" rel="nofollow" target="_blank">НУОУ</a>
+											</h6>
+											<p>Окончил Национальный университет обороны Украины им. Ивана Черняховского в 2014 году, кафедра подготовки офицеров запаса. Получил звание - младший лейтенант запаса, специализация - военная психология та педагогика.</p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="res-time">
+											<span>2010</span>
+											<span>2014 гг.</span>
+										</div>
+									</div>
+									<div class="col-sm-9">
+										<div class="res-descr">
+											<h3>Менеджмент таможенного дела</h3>
+											<h6>
+												<a href="https://www.knteu.kiev.ua/" rel="nofollow" target="_blank">КНТЭУ</a>
+											</h6>
+											<p>Окончил Киевский национальный торгово-экономический университет в 2014 году, факультет экономики, менеджмента и права. Получил квалификацию - бакалавр, специализация - менеджмент таможенного дела.</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-6">
-									<div class="skill-box">
-										<h4>JQuery</h4>
-										<p>15%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 15%"></div>
-										</div>
-									</div>
-									<div class="skill-box">
-										<h4>Git</h4>
-										<p>20%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 20%"></div>
-										</div>
-									</div>
-									<div class="skill-box">
-										<h4>Photoshop</h4>
-										<p>5%</p>
-										<div class="skill">
-											<div class="skill-level" style="width: 5%"></div>
-										</div>
-									</div>
-								</div>	
-							</div>
-						<div class="skill-block">
-							<div class="skill-block-head">
-							<i class="fa fa-graduation-cap"></i>
-							<h5>
-								<strong>Образование</strong>		
-							</h5>
-							</div>
-							<div class="col-sm-3 resume-time">
-								<span>2014</span>
-								<span>2016 гг.</span>
-							</div>
-							<div class="col-sm-9 resume-descr">
-								<h3>Логистика</h3>
-								<h6>
-									<a href="https://www.knteu.kiev.ua/" rel="nofollow" target="_blank">КНТЭУ
-									</a>
-								</h6>
-								<p>Окончил Киевский национальный торгово-экономический университет в 2016 году, факультет экономики, менеджмента и права. Получил квалификацию - магистр, специализация - логистика.</p>
-							</div>
-							<div class="col-sm-3 resume-time">
-								<span>2012</span>
-								<span>2014 гг.</span>
-							</div>
-							<div class="col-sm-9 resume-descr">
-								<h3>Психология</h3>
-								<h6>
-									<a href="http://nuou.org.ua/" rel="nofollow" target="_blank">
-									НУОУ
-									</a>
-								</h6>
-								<p>Окончил Национальный университет обороны Украины им. Ивана Черняховского в 2014 году, кафедра подготовки офицеров запаса. Получил звание - младший лейтенант запаса, специализация - военная психология та педагогика.</p>
-							</div>
-							<div class="col-sm-3 resume-time">
-								<span>2010</span>
-								<span>2014 гг.</span>
-							</div>
-							<div class="col-sm-9 resume-descr">
-								<h3>Менеджмент таможенного дела</h3>
-								<h6>
-									<a href="https://www.knteu.kiev.ua/" rel="nofollow" target="_blank">
-									КНТЭУ
-									</a>
-								</h6>
-								<p>Окончил Киевский национальный торгово-экономический университет в 2014 году, факультет экономики, менеджмента и права. Получил квалификацию - бакалавр, специализация - менеджмент таможенного дела.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
-
-	<footer>
-		<div class="footer-wrap">
-			<div class="container">
-	  		<div class="row">
-	  			<div class="col-sm-12 center">
+		</main>
+		<footer>
+			<div class="footer-wrap">
+				<div class="container">
+		  		<div class="row">
 						<div class="col-sm-4 col-xs-6">
-							<a href="#" rel="nofollow" target="_blank">
-								<i class="fa fa-copyright"></i>yuriy-butsan.com.ua
-							</a>
+							<div class="copy">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+									<i class="fa fa-copyright"></i>2018
+									<span>yubutsan.com.ua</span>
+								</a>
+							</div>
 						</div>
-						<div class="col-sm-4 center col-xs-6">
-							<a href="#" rel="nofollow" target="_blank">
-								<i class="fa fa-envelope-o"></i>связаться
-							</a>
+						<div class="col-sm-4 col-xs-6 center">
+							<ul class="soc-wrap">
+				  			<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+				  		</ul>
 						</div>
 						<div class="col-sm-4 col-xs-12">
-							<a href="#" rel="nofollow" target="_blank">
-								<img src="img/my-logo-w.png" alt="my-logo">developed by Yuriy Butsan
-							</a>
-				  	</div>
+							<div class="dev">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">Create by
+									<span>Yuriy Butsan</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-
-	<link rel="stylesheet" href="css/main.css">
-	<script type="text/javascript" src="libs/jQuery/jquery-3.2.1.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+		</footer>
+		<link rel="stylesheet" href="css/resume.css">
+		<script src="libs/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="libs/waypoints/jquery.waypoints.min.js"></script>
+		<script src="libs/jQuery-svg-progress/jQuery-svg-progress.js"></script>
+		<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+		<script src="js/common.js"></script>
+		<script>
+			$('.burger-btn').on('click', function(){
+			    $(this).toggleClass('active');
+			    $('.fixed-menu nav').slideToggle('fast');
+			  });
+		</script>
+	</body>
 </html>

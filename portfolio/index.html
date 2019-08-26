@@ -1,676 +1,507 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Front-end developer портфолио</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="img/favicon.png">
-	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/header.css">
-</head>
-<body>
-	<header id="header-menu">
-		<h1>Yuriy Butsan</h1>
-		<h2>front-end developer</h2>
-		<div class="switch-btn" data-menu="true">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<nav class="menu-wrap">
-			<ul class="nav-menu">
-				<li>
-					<a href="#header-menu">Главная</a>
-				</li>
-				<li>
-					<a href="#about">О себе</a>
-				</li>
-				<li>
-					<a href="#portfolio">Портфолио</a>
-				</li>
-				<li>
-					<a href="#blog">Блог</a>
-				</li>
-				<li>
-					<a href="#contact">Контакты</a>
-				</li>
-			</ul>				
-		</nav>
-		<div class="fixed-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 vcenter">
-						<a href="index.html">
-							<img src="img/my-logo-w.png" alt=""> Front-end Developer
-						</a>
-					</div> 
-					<div class="col-sm-9 vcenter">
-						<nav class="fixed-nav-menu">
-							<ul>
-								<li>
-									<a href="index.html">Главная</a>
-								</li>
-								<li>
-									<a href="resume.html">О себе</a>
-								</li>
-								<li>
-									<a href="#">Портфолио</a>
-								</li>
-								<li>
-									<a href="blog-page.html">Блог</a>
-								</li>
-								<li>
-									<a href="#contact">Контакты</a>
-								</li>
-							</ul>				
-						</nav>
-					</div>
-				</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Front-end developer портфолио</title>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid-3.3.1.min.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nav-btn.css">
+		<link rel="stylesheet" href="css/header.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120537633-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-120537633-1');
+		</script>
+	</head>
+	<body>
+		<header id="header-display" class="wp-zone">
+			<div class="burger-btn" data-menu="true">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-		</div>
-		<div class="soc-wrap">
-			<ul>
-				<li>
-					<a href="https://www.pinterest.com/" rel="nofollow" target="_blank">
-						<span>Pinterest</span>
-						<i class="fa fa-pinterest"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
-						<span>Github</span>
-						<i class="fa fa-github"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
-						<span>facebook</span>
-						<i class="fa fa-facebook"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/" rel="nofollow" target="_blank">
-						<span>linkedin</span>
-						<i class="fa fa-linkedin"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://codepen.io/" rel="nofollow" target="_blank">
-						<span>codepen</span>
-						<i class="fa fa-codepen"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<a class="button-down"> 
-			<i class="fa fa-chevron-circle-down"></i>
-		</a>
-	</header>
-	<main>
-		<section id="about">
-			<div class="title-section mt5">
-				<h3>
-					о себе
-				</h3>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 center">						
-						<div class="perspective">
-						  <label class="tab main-btn-rect tab-active disable-click" for="tab-cube-one">О себе</label>
-						  <label class="tab skills main-btn-rect" for="tab-cube-two">Навыки</label>
-						  <label class="tab main-btn-rect" for="tab-cube-three">Этапы</label>
-						  <label class="tab main-btn-rect" for="tab-cube-four">Интересы</label>
-
-						  <input type="radio" name="tabs" id="tab-cube-one">
-						  <input type="radio" name="tabs" id="tab-cube-two">
-						  <input type="radio" name="tabs" id="tab-cube-three">
-						  <input type="radio" name="tabs" id="tab-cube-four"> 
-						   
-						  <div class="cube">
-						    <div class="tab-content">
-							   <div class="col-sm-3">
-										<img src="img/foto-about-main.png">
-										<a href="attach/butsan_yuriy.pdf">
-											<button class="main-btn-rect">
-												<i class="fa fa-download"></i>
-												Скачать резюме
-											</button>
-										</a>
-									</div>
-								<div class="col-sm-9">
-									<h5>Don't be shy, say hi!</h5>
-									<p> Меня зовут Юрий и я Junior Front-End Developer из Киева.
-											Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. 
-											Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал.
-									</p>
-									<h6> В работе использую:</h6>
-									<ul class="icon-list">
-										<li class="icon-html5"><p>HTML5</p></li>
-										<li class="icon-css"><p>CSS3</p></li>
-										<li class="icon-js"><p>JavaScript</p></li>
-										<li class="icon-jquery"><p>JQuery</p></li>
-										<li class="icon-bootstrap"><p>Bootstrap</p></li>
-										<li class="icon-git"><p>Git</p></li>
-										<li class="icon-photoshop"><p>Photoshop</p></li>
-										<li class="icon-inkscape"><p>Inkscape</p></li>
-									</ul>
-								</div>
-						   </div>
-					     <div class="tab-content">
-					     	<ul class="cube-card first skills">
-					     		<li>
-					     			<div class="svg-progress-skill skill-item" data-progress-value="65">
-	        						<span class="svg-progress-output"></span>
-	 	     						</div>
-	 	     						<span class="icon-html5"></span>
-	     							<span class="skills-text">- HTML5 -</span>
-					     		</li>
-					     		<li>
-					     			<div class="svg-progress-skill skill-item" data-progress-value="65">
-	        						<span class="svg-progress-output"></span>
-	 	     						</div>
-	     							<span class="icon-css"></span>
-	     							<span class="skills-text">- css3 -</span>
-					     		</li>
-					     		<li>
-					     			<div class="svg-progress-skill skill-item" data-progress-value="50">
-	        						<span class="svg-progress-output"></span>
-	 	     						</div>
-	     							<span class="icon-js"></span>
-	     							<span class="skills-text">- javascript -</span>
-					     		</li>
-					     		<li>
-					     			<div class="svg-progress-skill skill-item" data-progress-value="50">
-	        						<span class="svg-progress-output"></span>
-	 	     						</div>
-	     							<span class="icon-photoshop"></span>
-	     							<span class="skills-text">- photoshop -</span>
-					     		</li>
-					     	</ul>
-					    </div>
-					    	<div class="tab-content">
-					      	<ul class="cube-card second">
-					      		<li>
-											<span class="icon-discussion"></span>
-											<span class="skills-text">- Обсуждение -</span>
-					      		</li>
-					      		<li>
-					      			<span class="icon-concept"> </span>
-					      			<span class="skills-text">- Создание концепта -</span>
-						      	</li>
-					      		<li>
-					      			<span class="icon-code"></span>
-					      			<span class="skills-text">- Разработка -</span>
-					      		</li>
-					      		<li>
-					      			<span class="icon-like"></span>
-					      			<span class="skills-text">- Довольный клиент -</span>
-					      		</li>
-					      	</ul>
-					    </div>
-					    <div class="tab-content">
-					      <ul class="cube-card third">
-									<li>
-										<span class="icon-consalting"> </span>
-					      		<span class="skills-text">- Консалтинг -</span>
-									</li>
-									<li>
-										<span class="icon-sport"> </span>
-										<span class="skills-text">- Спорт -</span>
-									</li>
-									<li>
-										<span class="icon-games"> </span>
-										<span class="skills-text">- Игры -</span>
-									</li>
-									<li>
-										<span class="icon-coffee"> </span>
-										<span class="skills-text">- Кофе -</span>
-									</li>
-								</ul>
-					    </div>
-					  </div>
-					</div>				
-					</div>
-				</div> 
-			</div> 		
-		</section>
-		<section id="portfolio" class="grid">
-			<div class="title-section mt5 mb5">
-				<h3>
-					портфолио
-				</h3>
-			</div>
-			<div class="container">
-				<div class="row">	
-					<div class="col-md-12 center mb4 filter-list controls">
-						<ul class="group-menu">
-							<li class="filter main-btn-rect disable-click" data-filter="all">все работы / n</li>
-							<li class="filter main-btn-rect" data-filter=".landing-page">Landing-page / n</li>
-							<li class="filter main-btn-rect" data-filter=".portfolio">Портфолио. Корпоративные сайты / n</li>
-							<li class="filter main-btn-rect" data-filter=".online-shops">Интернет-магазины / n</li>
-						</ul>
-						<ul class="icon-menu">
-							<li class="main-btn-rect disable-click" data-switcher="grid">
-								<i class="fa fa-th"></i>
-							</li>
-							<li class="main-btn-rect" data-switcher="list">
-								<i class="fa fa-th-list"></i>
-							</li>
-						</ul>
-					</div>
-					<div id="clients-list">
-						<div class="mix mix-item col-sm-4 landing-page">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work1.jpg" alt="work1">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 1</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 1</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-git"></li>
-									<li class="icon-photoshop"></li>
-									<li class="icon-inkscape"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-						<div class="mix mix-item col-sm-4 landing-page">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work2.jpeg" alt="work2">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 2</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 2</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-git"></li>
-									<li class="icon-photoshop"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-						<div class="mix mix-item col-sm-4 portfolio">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work3.jpg" alt="work3">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 3</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 3</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-photoshop"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-						<div class="mix mix-item col-sm-4 portfolio">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work4.jpg" alt="work4">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 4</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 4</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-photoshop"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-						<div class="mix mix-item col-sm-4 portfolio">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work5.jpg" alt="work5">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 5</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 5</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-photoshop"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-						<div class="mix mix-item col-sm-4 portfolio">
-							<div class="portfolio-card">
-								<a href="#">
-									<img src="img/work6.jpg" alt="work6">
-								</a>
-								<div class="main-btn-rect first-btn">
-									<span>work 6</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-								<h5>work 6</h5>
-								<p>Главная задача заключалась в визуальном обновлении сайта с учетом сохранения всех функциональных возможностей и соблюдении единого фирменного стиля.</p>
-								<h6>технологии</h6>
-								<ul class="icon-list">
-									<li class="icon-html5"></li>
-									<li class="icon-css"></li>
-									<li class="icon-js"></li>
-									<li class="icon-jquery"></li>
-									<li class="icon-bootstrap"></li>
-									<li class="icon-photoshop"></li>
-								</ul>
-								<div class="main-btn-rect second-btn">
-									<span>Подробнее</span>
-									<i class="fa fa-long-arrow-right"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-btn-rect download-more">
-					<span>больше работ</span>
-						<i class="fa fa-long-arrow-down"></i>
-				</div>
-			</div>
-		</section> 
-		<section id="blog">
-		  <div class="title-section mt5 mb5">
-			 	<h3>
-		 			блог
-			 	</h3>
-		 	</div>
-		  <div class="container">
-				<div class="row">
-					<div class="col-sm-4 switch-colors">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-1.png" alt="blog-img-1">
-							</a>
-							<div class="blog-content">
-								<h4>5 причин внедрить программу</h4>
-								<p>В современном мире основным источником физического труда выступает – техника, а интеллект и знания – это товар, который цениться больше всего...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>			
-					<div class="col-sm-4 switch-colors">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-2.png" alt="blog-img-2">
-							</a>
-							<div class="blog-content">
-								<h4>Какая польза от внедрения TMS?</h4>
-								<p>В наше время высокий уровень конкуренции стал одной из основных причин перераспределения расходов компании, так как ранее рентабельность предприятий составляла...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 switch-colors">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-3.png" alt="blog-img-3">
-							</a>
-							<div class="blog-content">
-								<h4>TMS – основной инструмент логиста</h4>
-								<p>Программа – это определенный инструмент, который на входе получает необходимые, точные данные для того, чтобы на выходе показать нам результат...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 switch-colors">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-4.png" alt="blog-img-4">
-							</a>
-							<div class="blog-content">
-								<h4>Поиск оптимальных маршрутов доставки</h4>
-								<p>Задача коммивояжёра («Travelling salesman problem», TSP) – одна из самых известных и важных задач транспортной логистики...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>
-          <div class="col-sm-4 switch-colors">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-5.png" alt="blog-img-5">
-							</a>
-							<div class="blog-content">
-								<h4>Система GPS мониторинга автотранспорта</h4>
-								<p>Технологии не стоят на месте, благодаря широкому применению и распространению систем GPS мониторинга...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 switch-colors">
-					<div class="blog-border">
-						<div class="blog-card mt1 mb1">
-							<div class="blog-date">
-								<i class="fa fa-calendar"></i>
-								<span>12.09.2017</span>
-							</div>
-							<a href="blog-article.html" class="blog-img">
-								<img src="img/blog-img-6.png" alt="blog-img-6">
-							</a>
-							<div class="blog-content">
-								<h4>Особенности доставки хлебной продукции</h4>
-								<p>Повышение качества обслуживания – одна из ключевых целей каждой компании XXI века. Джефф Безос говорил...
-								</p>
-								<a href="blog-article.html" class="btn-default">
-									<span>просмотр</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> 
-		<section id="contact">
-			<div class="title-section mt5 mb5">
-		 		<h3>
-		 				контакты
-		 		</h3>
-		 	</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 center">
-						<p>
-							<i class="fa fa-map-marker"></i>
-							Ukraine, Kiev
-						</p>
-					</div>
-					<div class="col-sm-3 center">
-						<p>
-							<i class="fa fa-phone"></i>
-							+38 (093) 892-30-63
-						</p>
-					</div>
-					<div class="col-sm-3 center">
-						<p>
-							<i class="fa fa-envelope"></i>
-							butsan.yuriy@gmail.com
-						</p>
-					</div>
-					<div class="col-sm-3 center">
-						<p>
-							<i class="fa fa-skype"></i>
-							yuriy_butsan
-						</p>
-					</div>
-				<div class="col-sm-4 mt4 contact-text">
-					<p>Меня зовут Юрий и я Junior Front-End Developer из Киева.
-						Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. 
-						Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал.</p>
-				<ul class="soc-list-wrap">
+			<nav class="burger-menu">
+				<ul>
 					<li>
-						<a href="https://www.pinterest.com/" rel="nofollow" target="_blank">
+						<a href="#header-display" class="disable-click">Главная</a>
+					</li>
+					<li>
+						<a href="#about">О себе</a>
+					</li>
+					<li>
+						<a href="#blog">Блог</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<h1><span>Yuriy Butsan</span></h1>
+			<h2>front-end developer</h2>
+			<div class="info-wrap">
+				<ul>
+					<li>
+						<a href="https://www.pinterest.com/butsanyuriy/" rel="nofollow" target="_blank">
+							<span>Pinterest</span>
 							<i class="fa fa-pinterest"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/" rel="nofollow" target="_blank">
+						<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+							<span>Github</span>
 							<i class="fa fa-github"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/" rel="nofollow" target="_blank">
+						<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+							<span>facebook</span>
 							<i class="fa fa-facebook"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/" rel="nofollow" target="_blank">
+						<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+							<span>linkedin</span>
 							<i class="fa fa-linkedin"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://codepen.io/" rel="nofollow" target="_blank">
+						<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+							<span>codepen</span>
 							<i class="fa fa-codepen"></i>
 						</a>
 					</li>
 				</ul>
-				</div>
-				<div class="col-sm-8 mt4">
-					<h4>Don't be shy, say hi!</h4>
-					<form id="send">
-						<input type="text" placeholder="Введите имя..." id="name" name="name" required="required">
-						<input type="email" placeholder="Введите почту..." id="mail" name="mail" required="required">
-						<textarea placeholder="Введите сообщение..." name="text" id="text"></textarea>
-						<button type="submit" class="main-btn-rect" value="Send">
-							Отправить
-						</button>
-					</form>
-				</div>
+			</div>
+			<div class="animation-arrow">
+				<div class="arrow-anim arrow-1"></div>
+				<div class="arrow-anim arrow-2"></div>
+			</div>
+			<div class="fixed-scroll-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+								<img src="img/logo-dev-white.png" alt="logo-dev-white.png"><span>Front-End Developer</span>
+							</a>						
+							<div class="mob-burger-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<nav class="fixed-nav-menu">
+								<ul>
+									<li>
+										<a href="#header-display">Главная</a>
+									</li>
+									<li>
+										<a href="resume.html">О себе</a>
+									</li>
+									<li>
+										<a href="blog.html">Блог</a>
+									</li>
+									<li>
+										<a href="http://yubutsan.com.ua/#contacts">Контакты</a>
+									</li>
+								</ul>				
+							</nav>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section>	
-	</main>
-	<footer>
-	<div class="footer-wrap">
-		<div class="container">
-  		<div class="row">
-  			<div class="col-sm-12 center">
-					<div class="col-sm-4 col-xs-6">
-						<a href="#" rel="nofollow" target="_blank">
-							<i class="fa fa-copyright"></i>
-							yuriy-butsan.com.ua
-						</a>
+		</header>
+		<main>
+			<section id="about" class="wp-zone mt7">
+				<div class="container">
+					<div class="row">
+							<div class="title-section active" data-index="1"> 
+								<h3 class="pt2">О себе</h3>
+							</div>
+							<div class="title-section" data-index="2">
+								<h3 class="pt2">Навыки</h3>
+							</div>
+							<div class="title-section" data-index="3">
+								<h3 class="pt2">Этапы</h3>
+							</div>
+							<div class="title-section" data-index="4">
+								<h3 class="pt2">Интересы</h3>
+							</div>
+							<div class="col-sm-12">
+								<div class="perspective">
+									<label class="tab main-btn-rect active" for="tab-about" data-filter="1">О себе</label>
+								  <label class="tab main-btn-rect skills" for="tab-skills" data-filter="2">Навыки</label>
+								  <label class="tab main-btn-rect" for="tab-stages" data-filter="3">Этапы</label>
+								  <label class="tab main-btn-rect" for="tab-interests" data-filter="4">Интересы</label>
+								  <input type="radio" name="tabs" id="tab-about" class="radio">
+								  <input type="radio" name="tabs" id="tab-skills" class="radio">
+								  <input type="radio" name="tabs" id="tab-stages" class="radio">
+								  <input type="radio" name="tabs" id="tab-interests" class="radio">
+						  	<div class="cube">
+						    <div class="tab-content">
+						    	<div class="col-sm-3 col-xs-3">
+						    		<img src="img/my-foto-2.png" alt="my-foto-2.png">
+						    		<a href="attach/Yuriy-Butsan.pdf" class="main-btn-rect">
+						    			<i class="fa fa-download"></i>Скачать pdf
+						    		</a>
+						    	</div>
+						    	<div class="col-sm-9 col-xs-9 col-xs-12">
+						    		<h4 class="title-cont">Don't be shy, say hi!</h4>
+						    		<p>Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал основан на чистом и структурированом коде. Свободное время посвящаю активному отдыху, просмотру фильмов и хорошему настроению.</p>
+										<ul class="icon-list">
+											<li class="icon-html5"><p>HTML5</p></li>
+											<li class="icon-css"><p>CSS3</p></li>
+											<li class="icon-js"><p>JavaScript</p></li>
+											<li class="icon-jquery"><p>JQuery</p></li>
+											<li class="icon-bootstrap"><p>Bootstrap</p></li>
+											<li class="icon-git"><p>Git</p></li>
+											<li class="icon-photoshop"><p>Photoshop</p></li>
+										</ul>
+						    	</div>
+						   	</div>
+					    	<div class="tab-content">
+					    		<ul class="cube-card skills">
+						     		<li>
+						     			<div class="svg-progress-skill skill-item" data-progress-value="90">
+		        						<span class="svg-progress-output"></span>
+		 	     						</div>
+		 	     						<span class="icon-html5"></span>
+		     							<span>HTML5</span>
+						     		</li>
+						     		<li>
+						     			<div class="svg-progress-skill skill-item" data-progress-value="90">
+		        						<span class="svg-progress-output"></span>
+		 	     						</div>
+		     							<span class="icon-css"></span>
+		     							<span>css3</span>
+						     		</li>
+						     		<li>
+						     			<div class="svg-progress-skill skill-item" data-progress-value="25">
+		        						<span class="svg-progress-output"></span>
+		 	     						</div>
+		     							<span class="icon-js"></span>
+		     							<span>javascript</span>
+						     		</li>
+						     	</ul>
+					    	</div>
+					  		<div class="tab-content">
+						      	<ul class="cube-card">
+						      		<li>
+												<span class="icon-discussion"></span>
+												<span>Обсуждение</span>
+						      		</li>
+						      		<li>
+						      			<span class="icon-concept"> </span>
+						      			<span>Создание концепта</span>
+							      	</li>
+						      		<li>
+						      			<span class="icon-code"></span>
+						      			<span>Разработка</span>
+						      		</li>
+						      		<li>
+						      			<span class="icon-like"></span>
+						      			<span>Довольный клиент</span>
+						      		</li>
+						      	</ul>
+						    </div>
+						    <div class="tab-content">
+						      <ul class="cube-card">
+										<li>
+											<span class="icon-consalting"></span>
+						      		<span>Консалтинг</span>
+										</li>
+										<li>
+											<span class="icon-sport"></span>
+											<span>Спорт</span>
+										</li>
+										<li>
+											<span class="icon-games"></span>
+											<span>Игры</span>
+										</li>
+										<li>
+											<span class="icon-coffee"></span>
+											<span>Кофе</span>
+										</li>
+									</ul>
+						    </div>
+					  	</div>
+					  </div>
+							</div>
+						
+					  <div class="col-sm-12 cord-wrap mt3">
+					  	<div class="about-info">
+					  		<span class="cord"><i class="fa fa-minus-circle"></i></span>
+					  		<span class="cord"><i class="fa fa-minus-circle"></i></span>
+				  			<ul class="soc-wrap center">
+				  				<li>
+				  					<a href="attach/Yuriy-Butsan.pdf" class="main-btn-rect">
+											<i class="fa fa-download"></i>Скачать Резюме
+										</a>
+				  				</li>
+					  			<li>
+										<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+											<i class="fa fa-github"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+											<i class="fa fa-codepen"></i>
+										</a>
+									</li>
+					  		</ul>
+					  	</div>
+					  </div>
 					</div>
-					<div class="col-sm-4 center col-xs-6">
-						<a href="#" rel="nofollow" target="_blank">
-							<i class="fa fa-envelope-o"></i>
-							связаться
-						</a>
+				</div>
+			</section>
+			<section id="blog" class="wp-zone mt7">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="title-section mb5">
+								<h3 class="pt2">Блог</h3>
+							</div>
+						</div>
+						<div class="col-md-12 col-xs-12 mt5 mb5 center">
+							<div class="blog-card">
+								<div class="col-sm-6 col-xs-12">
+									<div class="blog-card-left">
+										<a href="">
+											<img src="img/sublimeText3logo.png" alt="sublimeText3logo.png">
+										</a>
+										<div class="blog-date">
+											<span>07</span>
+											<span>June</span>
+											<span>2018</span>
+										</div>
+										<ul class="soc-wrap">
+											<li>
+												<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+													<i class="fa fa-github"></i>
+												</a>
+											</li>
+											<li>
+												<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+													<i class="fa fa-codepen"></i>
+												</a>
+											</li>
+											<li>
+												<a href="" rel="nofollow" target="_blank">
+													<i class="fa fa-eye"></i>
+												</a>
+											</li>
+											<li>
+												<a href="" target="_blank">
+													<i class="fa fa-heart-o"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="blog-card-right">
+										<h4 class="mt2 title-cont">Советы по использованию Sublime Text 3: быстрая установка и настройка для веб-разработки.</h4>
+										<a href="" rel="nofollow" target="_blank" class="blog-author-wrap">
+											<img src="img/my-foto.png" alt="logo-developer.png">
+											<span>Yuriy Butsan</span>
+										</a>
+										<p>Sublime Text 3 — кроссплатформенный текстовый редактор. В данной статье мы рассмотрим максимально быструю настройку Sublime Text 3, подключение самых популярных плагинов, немножко затронем тонкую настройку Sublime Text 3 и разберёмся, как переносить все наши настройки в случае использования другого PС...</p>
+									</div>
+								</div>
+								<a href="sublimeText3.html" class="fade-in main-btn-circle">
+									<i class="fa fa-long-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-12 col-xs-12 mt5 mb5 center">
+							<div class="blog-card">
+								<div class="col-sm-6 col-xs-12">
+									<div class="blog-card-left">
+										<a href="">
+											<img src="img/sticky-waypoints.jpg" alt="sticky-waypoints.jpg">
+										</a>
+										<div class="blog-date">
+											<span>21</span>
+											<span>April</span>
+											<span>2018</span>
+										</div>
+										<ul class="soc-wrap">
+											<li>
+												<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+													<i class="fa fa-github"></i>
+												</a>
+											</li>
+											<li>
+												<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+													<i class="fa fa-codepen"></i>
+												</a>
+											</li>
+											<li>
+												<a href="" rel="nofollow" target="_blank">
+													<i class="fa fa-eye"></i>
+												</a>
+											</li>
+											<li>
+												<a href="" target="_blank">
+													<i class="fa fa-heart-o"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="blog-card-right">
+										<h4 class="mt2 title-cont">Подсветка пунктов главного меню при скроллинге с помощью Waypoints</h4>
+										<a href="" rel="nofollow" target="_blank" class="blog-author-wrap">
+											<img src="img/my-foto.png" alt="logo-developer.png">
+											<span>Yuriy Butsan</span>
+										</a>
+										<p>Навигация сайта является важнейшей составляющей для пользователя. С её помощью можно легко и удобно найти необходимую информацию. Включает в себя много элементов, сегодня поговорим о подсветке пунктов основного меню при прокрутке, что является неотъемлемой частью функционала, призвана улучшить удобство для посетителя во время посещения сайта...</p>
+									</div>
+								</div>
+								<a href="waypoints.html" class="fade-in main-btn-circle">
+									<i class="fa fa-long-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-4 col-xs-12">
-						<a href="https://0nelife.github.io/portfolio/" rel="nofollow" target="_blank">
-							<img src="img/logo-developer.png" alt="my-logo">
-							developed by Yuriy Butsan
-						</a>
-			  	</div>
+				</div>
+			</section>
+			<section id="contacts" class="wp-zone mt7">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="title-section mb5">
+								<h3 class="pt2">Контакты</h3>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="panel-left">
+								<h4 class="title-cont mb4">Don't be shy, say hi!</h4>
+								<p>Мне нравится с помощью кода получать нетривиальное решение сложной и запутанной задачи UX/UI направления. Как результат, - простой, красивый и оригинальный интерфейс, а так же полный, удобный и интуитивно понятный функционал основан на чистом и структурированом коде. Свободное время посвящаю активному отдыху, просмотру фильмов и хорошему настроению.</p>
+								<ul class="icon-text">
+									<li>
+										<i class="fa fa-street-view"></i>Украина, Киев
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>+380938923063
+									</li>
+									<li>
+										<i class="fa fa-skype"></i>yuriy_butsan
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="panel-right mb5">
+								<form id="send" class="send-form mt4" action="mail.php">
+									<div class="form-group">
+										<input type="text" placeholder="Введите имя..." id="name" name="name" required="required">
+										<label for="name">
+											<i class="fa fa-user"></i>
+										</label>
+									</div>
+									<div class="form-group">
+										<input type="tel" placeholder="Введите номер телефона..." id="phone" name="phone" required="required">
+										<label for="phone">
+											<i class="fa fa-phone"></i>
+										</label>
+									</div>
+									<div class="form-group">
+										<input type="email" placeholder="Введите почту..." id="mail" name="mail" required="required">
+										<label for="mail">
+											<i class="fa fa-envelope"></i>
+										</label>
+									</div>
+									<div class="form-group">
+										<textarea placeholder="Введите сообщение..." name="text" id="text"></textarea>
+										<label for="text" class="txt">
+											<i class="fa fa-commenting"></i>
+										</label>
+									</div>
+									<button type="submit" class="main-btn-rect" name="text" value="Send">
+										<i class="fa fa-paper-plane"></i>Отправить
+									</button>
+									<input type="hidden" name="project_name" value="yubutsan.com.ua">
+									<input type="hidden" name="admin_email" value="butsan.yuriy@gmail.com">
+									<input type="hidden" name="form_subject" value="Заявка с yubutsan.com.ua">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>			
+		</main>
+		<footer>
+			<div class="footer-wrap">
+				<div class="container">
+		  		<div class="row">
+						<div class="col-sm-4 col-xs-6">
+							<div class="copy">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">
+									<i class="fa fa-copyright"></i>2018
+									<span>yubutsan.com.ua</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6 center">
+							<ul class="soc-wrap">
+				  			<li>
+									<a href="https://github.com/0neLife" rel="nofollow" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100010259854786" rel="nofollow" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/%D1%8E%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%86%D0%B0%D0%BD-446317144/" rel="nofollow" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://codepen.io/0neLife/" rel="nofollow" target="_blank">
+										<i class="fa fa-codepen"></i>
+									</a>
+								</li>
+				  		</ul>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="dev">
+								<a href="http://yubutsan.com.ua" rel="nofollow" target="_blank">Create by
+									<span>Yuriy Butsan</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</footer>
-
-	<link rel="stylesheet" href="css/main.css">
-	<script type="text/javascript" src="libs/jQuery/jquery-3.2.1.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/jQuery-svg-progress/jQuery-svg-progress.js"></script>
-	<script src="libs/mixitup/jquery.mixitup.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	
-	
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-</body>
+		</footer>
+		<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
+		<script src="libs/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="libs/waypoints/jquery.waypoints.min.js"></script>
+		<script src="libs/jQuery-svg-progress/jQuery-svg-progress.js"></script>
+		<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
 </html>
