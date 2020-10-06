@@ -7,4 +7,6 @@
 # [it-event](https://0neLife.github.io/it-event)
 > Fast and convenient landing page template
 
+# [PWA-demo](https://0neLife.github.io/pwa-demo)
+> A simple PWA Starter Kit for modern web development
 
