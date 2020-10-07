@@ -4,10 +4,8 @@
   "lang": "en",
   "description": "A simple PWA Starter Kit for modern web development.",
   "start_url": ".",
-  "scope": "/",
   "background_color": "#00aae7",
   "theme_color": "#a073ca",
-  "dir": "ltr",
   "display": "standalone",
   "orientation": "natural",
   "icons": [
