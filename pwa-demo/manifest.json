@@ -3,22 +3,17 @@
   "name": "PWA Demo",
   "lang": "en",
   "description": "A simple PWA Starter Kit for modern web development.",
-  "start_url": ".",
-  "background_color": "#00aae7",
-  "theme_color": "#a073ca",
-  "display": "standalone",
-  "orientation": "natural",
   "icons": [
     {
       "src": "img/icon/icon-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     },
     {
       "src": "img/icon/android-icon-192x192.png",
       "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
+      "sizes": "192x192"
     },
     {
       "src": "img/icon/apple-icon-180x180.png",
@@ -56,7 +51,7 @@
       "sizes": "76x76"
     },
     {
-      "src": "/apple-icon-72x72.png",
+      "src": "img/icon/apple-icon-72x72.png",
       "type": "image/png",
       "sizes": "72x72"
     },
@@ -81,5 +76,10 @@
       "sizes": "16x16"
     }
   ],
-  "prefer_related_applications": "false"
+  "start_url": ".",
+  "background_color": "#FFFFFF",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "natural",
+  "prefer_related_applications": false
 }
