@@ -1,10 +1,11 @@
+// registration --> installation --> activation
 const staticCacheName = 'static-cache-v1.0';
 const dynamicCacheName = 'dynamic-cache-v1.0';
 const staticAssets = ['./', './index.html', './offline.html', './css/main.min.css', './css/header.min.css', './js/registerWorker.js', './js/common.js'];
 self.addEventListener('install', async event => {
   const cache = await caches.open(staticCacheName);
   await cache.addAll(staticAssets);
-  console.log('Service worker has been installed:');
+  console.log('Service worker has been installed:', event);
 });
 self.addEventListener('activate', async event => {
   const cachesKeys = await caches.keys();
@@ -14,7 +15,7 @@ self.addEventListener('activate', async event => {
     }
   });
   await Promise.all(checkKeys);
-  console.log('Service worker has been activated:');
+  console.log('Service worker has been activated:', event);
 });
 self.addEventListener('fetch', async event => {
   console.log('Trying to fetch:', event.request.url);
