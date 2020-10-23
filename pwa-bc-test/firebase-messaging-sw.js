@@ -1,6 +1,6 @@
 importScripts('https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/7.24.0/firebase-messaging.js');
-var config = {
+var firebaseConfig = {
   apiKey: "AIzaSyDJENVW874nkGUYHqYpQoEZxAiMkdzpdSg",
   projectId: "pwa-bc-test",
   authDomain: "pwa-bc-test.firebaseapp.com",
