@@ -1,9 +1,8 @@
 importScripts('https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.24.0/firebase-messaging.js');
 importScripts('https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js');
 var config = {
   apiKey: "AIzaSyDJENVW874nkGUYHqYpQoEZxAiMkdzpdSg",
-  authDomain: "pwa-bc-test.firebaseapp.com",
-  databaseURL: "https://pwa-bc-test.firebaseio.com",
   projectId: "pwa-bc-test",
   storageBucket: "pwa-bc-test.appspot.com",
   messagingSenderId: "664593019563",
