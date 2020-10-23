@@ -10,7 +10,6 @@ var config = {
   measurementId: "G-VNHWGGSRMJ"
 };
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
 const messaging = firebase.messaging();
 messaging.setBackgroundMessageHandler(function (payload) {
   const title = 'Hello World';
